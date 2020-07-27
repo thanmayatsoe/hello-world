@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>Introduction to js</title>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+</head>
+<html>
+    <body>
+        <p id="hello" style="color:green">Hello World!</p>
+        <input type="text" id="color" value="" placeholder="Enter color"/>
+    </body>
+    <script type="text/javascript">
+    //variable types eg
+    var str="";//string
+    var lat=0.0;//float & double of number
+    var lon=0;//int of number
+    var isOk=false;//boolean
+
+    //dynamic type programming language
+    str=0;
+    prompt(typeof(str));//number
+
+    
+    document.getElementById("hello").style.color="red";
+    //color will be changed after pressing ok btn prompt
+    //because can effect at running time
+
+    var colorV=document.getElementById('color');
+    colorV.addEventListener("change",
+    function(){
+        document.getElementById("hello").style.color=colorV.value;
+    });
+    </script>
+</html
